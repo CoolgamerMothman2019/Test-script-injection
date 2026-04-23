@@ -1,5 +1,5 @@
 (() => {
-if (window.__INJECTION__) return;
+if (!window.__INJECTION__) {
 window.__INJECTION__ = true; //i did like a infdef in c header files so that my script doesnt get ran multiple times and mess itself up like redefining consts.
 
 
@@ -21,4 +21,5 @@ document.body.appendChild(bar)
 // i could inject any sort of script and have full control over the sites html, i could rewrite anything. fix it by changing it to set it to text, not innerHTML.
 
 //you might not see this though lmao
+}
 })();
