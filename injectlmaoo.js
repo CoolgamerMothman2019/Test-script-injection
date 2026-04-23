@@ -1,6 +1,6 @@
 (() => {
-if (INJECTION) return;
-let INJECTION = true; //i did like a infdef in c header files so that my script doesnt get ran multiple times and mess itself up like redefining consts.
+if (window.__INJECTION__) return;
+window.__INJECTION__ = true; //i did like a infdef in c header files so that my script doesnt get ran multiple times and mess itself up like redefining consts.
 
 
 let bar = document.createElement("div");
